@@ -25,6 +25,14 @@ export const DateList = () => {
                         {date.toLocaleDateString('fr-FR', { 
                             day: 'numeric',
                             ...(isActive && { month: 'short' })
+                        }) === new Date().toLocaleDateString('fr-FR', { 
+                            day: 'numeric',
+                            month: 'short'
+                        }) ? 'Today, ' : ''}
+
+                        {date.toLocaleDateString('fr-FR', { 
+                            day: 'numeric',
+                            ...(isActive && { month: 'short' })
                         })}
                     </Text>
                 </TouchableOpacity>
