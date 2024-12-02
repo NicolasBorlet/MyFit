@@ -10,7 +10,6 @@ module.exports = {
     extend: {
       colors: {
         'orange': '#F15223',
-        'orange20': 'rgba(241, 82, 35, 0.2)',
         'purple': '#5041AB',
         'black': '#040415',
         'gold': '#FFB432',

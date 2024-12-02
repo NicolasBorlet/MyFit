@@ -1,9 +1,11 @@
 import Base from '@/assets/images/base';
 import '../../../global.css';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { styles } from '@/style';
+import { DateList } from '@/components/date-list';
 
 export default function HomeScreen() {
-  dateWithoutYear = new Date().toLocaleDateString('en-US', {
+  const dateWithoutYear = new Date().toLocaleDateString('en-US', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
@@ -15,13 +17,13 @@ export default function HomeScreen() {
       style={{ flex: 1 }}
       contentContainerStyle={{ flexGrow: 1, backgroundColor: 'white' }}
     >
-      <View className='flex-1'>
-        <Base />
+      <Base />
+      <View style={[styles.container, { marginBottom: 36 }]}>
+        <Text style={styles.paragraph02}>Today, {dateWithoutYear}</Text>
+        <Text style={styles.headline02}>Your activities</Text>
       </View>
-      <View>
-        <Text>Today, {dateWithoutYear}</Text>
-        <Text>Your activities</Text>
-      </View>
+      <DateList />
     </ScrollView>
   );
 }
+
