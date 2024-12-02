@@ -7,7 +7,18 @@ module.exports = {
     // Do the same with `components`, `hooks`, `styles`, or any other top-level directories
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'orange': '#F15223',
+        'purple': '#5041AB',
+        'black': '#040415',
+        'gold': '#FFB432',
+        'cyan': '#69E0C7',
+        'light-purple': '#8A24FF',
+        'pink': '#FF7D7D',
+        'green': '#65CF58'
+      }
+    },
   },
   plugins: [],
 };
