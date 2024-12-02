@@ -11,12 +11,18 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
     },
+    headline01: {
+        fontSize: 36,
+        lineHeight: 46,
+        fontWeight: 'bold',
+    },
     headline02: {
         fontSize: 24,
         lineHeight: 34,
         fontWeight: 'bold',
     },
     headline06: {
+        fontWeight: 'bold',
         fontSize: 14,
         lineHeight: 24,
     },

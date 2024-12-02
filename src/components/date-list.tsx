@@ -20,7 +20,12 @@ export const DateList = () => {
                     onPress={() => setActiveDay(date)}
                 >
                     <Text style={[styles.headline06, {
-                        fontWeight: isActive ? 'bold' : 'normal',
+                        paddingVertical: isActive ? 4 : 0,
+                        paddingHorizontal: isActive ? 8 : 0,
+                        backgroundColor: isActive ? 'rgba(241, 82, 35, 0.2)' : 'transparent',
+                        color: 'black',
+                        opacity: isActive ? 1 : 0.5,
+                        borderRadius: isActive ? 16 : 0
                     }]}>
                         {date.toLocaleDateString('fr-FR', { 
                             day: 'numeric',
